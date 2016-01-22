@@ -10,6 +10,34 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bundle.js
  *= require_tree .
  *= require_self
  */
+
+html, body, div, ul, li {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  background: transparent;
+  text-align: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.map {
+  width: 500px;
+  height: 500px;
+}
